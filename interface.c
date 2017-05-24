@@ -67,6 +67,7 @@ void administrador()
             break;
         }
 
+
         switch (opcao) {
             case 1:
                 adicionar_pergunta();
