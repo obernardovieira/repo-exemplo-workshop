@@ -6,3 +6,5 @@ struct jogador_
     int errou;
     int jogouNvezes;
 };
+
+struct jogador_ registar_novo_jogador(char nome_jogador[24]);

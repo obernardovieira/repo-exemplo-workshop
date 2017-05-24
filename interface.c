@@ -28,11 +28,9 @@ void novo_jogo()
     while(pergunta < 7)
     {
         printf("%s\n", jogo.perguntas[pergunta].pergunta);
-
         printf("1 - %s\n", jogo.perguntas[pergunta].respostas[0]);
         printf("2 - %s\n", jogo.perguntas[pergunta].respostas[1]);
         printf("3 - %s\n", jogo.perguntas[pergunta].respostas[2]);
-
         scanf("%d", &resposta_jogador);
 
         if(resposta_jogador == jogo.perguntas[pergunta].resposta_correta)
@@ -62,6 +60,7 @@ void novo_jogo()
         printf("O jogador %s ganhou!\n", jogo.jogadores[1].nome);
     }
 }
+
 void adicionar_pergunta()
 {
     int resposta = 0;
@@ -101,7 +100,6 @@ void administrador()
         {
             break;
         }
-
 
         switch (opcao) {
             case 1:
