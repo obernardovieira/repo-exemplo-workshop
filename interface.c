@@ -25,9 +25,34 @@ void novo_jogo()
 
 }
 
-void administrador()
+void adicionar_pergunta()
 {
 
+}
+
+void administrador()
+{
+    int opcao;
+
+    while(1)
+    {
+        printf("Escolha uma opção:\n");
+        printf("1 - Adicionar nova pergunta\n");
+        printf("2 - Sair\n");
+
+        scanf("%d", &opcao);
+        if(opcao == 2)
+        {
+            break;
+        }
+
+        switch (opcao) {
+            case 1:
+                adicionar_pergunta();
+                break;
+        }
+
+    }
 }
 
 int main()
